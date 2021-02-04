@@ -1,7 +1,7 @@
 const $pizzaList = document.querySelector('#pizza-list');
 
 const getPizzaList = () => {
-  fetch('/api/pizza')
+  fetch('/api/pizzas')
     .then(response => response.json())
     .then(pizzaListArr => {
       pizzaListArr.forEach(printPizza);
